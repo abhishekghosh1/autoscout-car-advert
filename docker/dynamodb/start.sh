@@ -17,7 +17,7 @@ aws dynamodb create-table \
 	--key-schema AttributeName=id,KeyType=HASH \
     --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1 \
     --region=eu-west-1 \
-    --endpoint=http://localhost:8000
+    --endpoint=http://dynamodb:8000
 
 # Bring dynamoDB process to the foreground
 fg
